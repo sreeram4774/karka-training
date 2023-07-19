@@ -12,18 +12,45 @@ persons=[
         ]
 
 
-for person in persons:
-    if "sslc_mark"==persons:
-         total=sslc_mark+person
+# for person in persons:
+#     if "sslc_mark"==persons:
+#         total=sslc_mark+person
+#         print
+
+# def calculate_total_sslc_mark(person):
+#     if "sslc_mark" in person:
+#         marks = person["sslc_mark"]
+#         total = sum(marks.values())
+#         return total
+#     return None
+
+# for person in persons:
+#     total_sslc_mark = calculate_total_sslc_mark(person)
+#     if total_sslc_mark is not None:
+
+#         print(total_sslc_mark)
+
+def calculate_sslc_totals(persons_data):
+    sslc_totals = {}
+
+    for person_data in persons_data:
+        if "sslc_mark" in person_data:
+            name = person_data["name"]
+            sslc_marks = person_data["sslc_mark"]
+            total_mark = sum(sslc_marks.values())
+
+            sslc_totals[name] = total_mark
+
+    return sslc_totals
+
+sslcs_totals = calculate_sslc_totals(persons)
 
 
+for name, total in sslc_totals.items():
+    print(f"{name}: Total SSLC Mark - {total}")
 
-        # print(persons[1]["sslc_mark"])
-    
-    # person=["sslc_mark":sslc_mark]
-    # total=sslc_mark+person
-    # print(mark)
 
+   
         
       
     

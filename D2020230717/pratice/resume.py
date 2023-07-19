@@ -11,12 +11,13 @@ my_resume = {
         "Degree": "2021",
     },
     "Projects": ["accident identification", "eletric circuit", "magnetic field"],
-    "Experience":[{"company_name":"global university","role":"data analysis","duration":2.4}],
-                 [{"company_name":"flow","role":"full stock developer","duration":1.4}]
-                 [{"comapny_name":"green it","role":"ux,ui desgin","duration":1.7}]
+    "Experience":[
+        {"company_name":"global university","role":"data analysis","duration":2.4},
+        {"company_name":"flow","role":"full stock developer","duration":1.4},
+        {"comapny_name":"green it","role":"ux,ui desgin","duration":1.7},
+    ],
 
-                 
-    {"Hobbies": ["cricket", "carrom", "chess"]},
+    "Hobbies": ["cricket", "carrom", "chess"],
     "Personal Details": {
         "Father's name": "j.gopal",
         "Father's occupation": "business",
@@ -27,4 +28,7 @@ my_resume = {
         "Address": "theppakulam north street,krishnancoil,nagercoil.",
     }
 }
+
+dic_name={"name",name}
+
 print(my_resume)
