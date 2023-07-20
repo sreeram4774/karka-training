@@ -4,12 +4,23 @@ items = [
     {"name": "Banana", "category": "Fruits"},
     {"name": "Broccoli", "category": "Vegetables"},
 ]
+Fruits=[]
+Vegetables=[]
+for i in items:
+    if i["category"]=="Fruits":
+        Fruits.append(i["name"])
+    elif i["category"]=="Vegetables":
+        Vegetables.append(i["name"])
 
-for item in items:
-    if item ["name"]:
-
-        name=items[0]
-        name1=items[1]
-        print(name)
+a={"Fruits":Fruits,
+   "Vegetables":Vegetables}                      
+print(a)   
+               
 
 
+    
+    
+
+
+
+        
