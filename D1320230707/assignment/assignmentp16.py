@@ -1,12 +1,28 @@
+gender=(input("what is your gender (m or f): answer: "))
+firstname=(input("firstname  : "))
+lastname=(input("lastname : "))
+age=int(input("age : "))
+if  gender == "f" :
+    if   age >= 20:
+
+        married=(input(f"are you married,{gender} (yes or no)? : "))
+        print(f"Then i shall call you Ms.{firstname}.")
+        elif age=="20":
+            print(f"Then i shall call you {firstname,lastname}")
 
 gender=(input("what is your gender (m or f): answer: "))
 firstname=(input("first name  : "))
 lastname=(input("last name : "))
 age=int(input("age : "))
-if  gender == "f" :
-    if   age>=20:
-        married=(input(f"are you married,{gender} (yes or no)? : "))
-        print(f"Then i shall call you Mrs.{lastname}.")
+if gender == "m":
+    if age>"20":
+        print(f"then i shall call you Mr.{firstname,lastname}")
+    else:
+        print(f"Then i shall call you {firstname,lastname}")
+
+        
+
+
 # gender=(input("what is your gender (m or f): answer: "))
 # firstname=(input("first name  : "))
 # lastname=(input("last name : "))
