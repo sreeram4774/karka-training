@@ -6,7 +6,7 @@
 #     print("your are not eiligible to vote")    
 age=18
 elegibleage=int(input("your age"))
-if age>elegibleage:
+if elegibleage<age:
     print("you are not elegible to vote")
 else:
     print("you are elegible to vote")    

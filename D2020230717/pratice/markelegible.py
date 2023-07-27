@@ -30,27 +30,3 @@ persons=[
 
 #         print(total_sslc_mark)
 
-def calculate_sslc_totals(persons_data):
-    sslc_totals = {}
-
-    for person_data in persons_data:
-        if "sslc_mark" in person_data:
-            name = person_data["name"]
-            sslc_marks = person_data["sslc_mark"]
-            total_mark = sum(sslc_marks.values())
-
-            sslc_totals[name] = total_mark
-
-    return sslc_totals
-
-sslcs_totals = calculate_sslc_totals(persons)
-
-
-for name, total in sslc_totals.items():
-    print(f"{name}: Total SSLC Mark - {total}")
-
-
-   
-        
-      
-    

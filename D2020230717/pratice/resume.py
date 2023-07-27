@@ -31,4 +31,4 @@ my_resume = {
 
 dic_name={"name",name}
 
-print(my_resume)
+# print(my_resume)

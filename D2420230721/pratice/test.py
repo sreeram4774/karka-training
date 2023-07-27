@@ -28,7 +28,6 @@ else:
     print("This is a smallest number < 100")    
 
 
-
    
       
 

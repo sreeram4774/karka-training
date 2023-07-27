@@ -12,7 +12,7 @@ lists=[{"name":"sree","age":24,"place":"nagercoil"},
 #       print(f"Name: {name}, Place: {place}")
 
 for list in lists:
-      # if list (age>23):
+      
             age=list["age"]
             if age>23:
 

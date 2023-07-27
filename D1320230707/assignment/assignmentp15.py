@@ -1,5 +1,6 @@
 print("Two more questions baby!\nthink of something and i'll try to guess it!")
 question1=(input("Does it stay inside or outside or both?\n Answer: "))
+question2=(input(""))
 if question1=="outside":
     question2=(input("is it a living thing?\n Answer: "))
 
@@ -11,9 +12,7 @@ if question2=="yes":
 
 else:
     print("wrong answer")    
+
+
     
-
-
-
-
- 
+    
