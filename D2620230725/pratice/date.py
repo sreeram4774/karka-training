@@ -12,7 +12,15 @@
 # print(curr_date)
 # Python program to
 
-from datetime import date
-today = date.today()
-print(today)
+# from datetime import date
+# today = date.today()
+# print(today)
+# from datetime import datetime
+# today=datetime.now()
+# print(today)
+days=str(input("enter days: "))
+from datetime import datetime , timedelta
+time_for_now=datetime.now()
+toda=time_for_now+timedelta(days)
+print(timedelta)
 

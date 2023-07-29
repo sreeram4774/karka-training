@@ -23,7 +23,42 @@
 #     if 1%n==0:
 #         print("\n")
 
-a=("this my first")
-print(a)
+
+# days=["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+# # days[]
+# totaldays=30
+# daycal=7*4
+# for day in days:
+#     if day==daycal:
+#         print(monday)
+
+# days=["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+# value=int(input("enter your number:" ))
+# for range in days :
+#     if value==1:
+#         print("monday")
+#     else:
+#         print("tuesday")    
+
+# days=["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+# n=1*31
+# for  in range(n):
+#     # if 
+#     print(day)
+
+number1=int(input("enter your number: "))
+number2=int(input("enter your number: "))
+number3=int(input("enter your number: "))
+number4=int(input("enter your number: "))
+number5=int(input("enter your number: "))
+values=[number1,number2,number3,number4,number5]
+for value in values:
+        if value%2==0:  
+                print("this is even number- ",value)
+        
+        else:
+                
+                print("this is odd number- ",value)
+        
 
 
