@@ -46,19 +46,36 @@
 #     # if 
 #     print(day)
 
-number1=int(input("enter your number: "))
-number2=int(input("enter your number: "))
-number3=int(input("enter your number: "))
-number4=int(input("enter your number: "))
-number5=int(input("enter your number: "))
-values=[number1,number2,number3,number4,number5]
-for value in values:
-        if value%2==0:  
-                print("this is even number- ",value)
+# number1=int(input("enter your number: "))
+# number2=int(input("enter your number: "))
+# number3=int(input("enter your number: "))
+# number4=int(input("enter your number: "))
+# number5=int(input("enter your number: "))
+# values=[number1,number2,number3,number4,number5]
+# for value in values:
+#         if value%2==0:  
+#                 print("this is even number- ",value)
         
-        else:
+#         else:
                 
-                print("this is odd number- ",value)
+#                 print("this is odd number- ",value)
         
 
+# l=[1,2,3,4,5]
+# n=int(input("enter your number: "))
+# for i in range(len(l)):
+#         if i(l)==n:
+#                 print(i)
 
+# for l in range(3):
+# range(l)
+# for i in range(3):
+        # print(i)
+# for i in index[3]:
+        # print(i)        
+# list=len(l)
+# print(list)
+
+l=[1,2,3,4,5] #list ele add the user number 
+l[4]="6"   #
+print(l)
