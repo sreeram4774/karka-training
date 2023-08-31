@@ -26,7 +26,8 @@ Educational_details:[{"study":"b.tech"},
                                        
                    
 for item in semester_mark:
-    print(item[study])                    
+    print(item[study]) 
+                       
 
 
 

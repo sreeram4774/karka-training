@@ -204,7 +204,7 @@
 # mind game program
 
 mind=4
-# while True:
+while True:
     user1=int(input("enter the 1st number-1 to 10 : "))
     user2=int(input("enter the 2nd number-1 to 10 : "))
     if user1 > mind and user2 > mind:
@@ -227,21 +227,9 @@ mind=4
         print("user1 answer is correct")
         if user2 == mind:
             print("user2 answer is correct")
-            # break
+            break
             
        
    
     
-# if user1 > mind:
-#         print("user1 answer is too long")
-#     elif user1 < mind:
-#         print("user1 answer is too short")
-#     elif user2 < mind:
-#         print("user2 answer is too short")
-#     elif user2 > mind:
-#         print("user2 answer is too long")     
-#     elif user1 == mind:
-#         print("user1 is correct")
-#         if user2 == mind:
-#             print("user2 is correct")
-#             break
+

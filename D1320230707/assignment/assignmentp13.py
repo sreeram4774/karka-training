@@ -9,8 +9,6 @@ if  Q1=="animal":
     Q2=(input("2,it is bigger than breadbox\n answer: "))    
 if Q2=="no":
     print(f"MY guess is that you are thinking of a mouse \ni would ask you if i'm right,but i don't actually care")
-        
-
 
 
 print("Two question !\n Think of an object,and i'll try to guess it.")

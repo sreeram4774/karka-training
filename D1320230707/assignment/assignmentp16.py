@@ -52,8 +52,8 @@ if gender == "m":
 # firstname=(input("first name  : "))
 # lastname=(input("last name : "))
 # if age=="<20":
-    age=int(input("age : "))
-    print(firstname,lastname)
+    # age=int(input("age : "))
+    # print(firstname,lastname)
 # if maleage=="20>":
     # age=int(input("age : "))
     # print(f"Then i shall call you Mr.{firstname}")              #(<-3rd method)

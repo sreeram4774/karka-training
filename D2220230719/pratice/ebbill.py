@@ -28,24 +28,23 @@ consumerdata = {
 a=[]
 for i in range(0,len(consumerdata["eb_reading"])-1):
     data=consumerdata["eb_reading"] [i+1]-consumerdata["eb_reading"][i]
-    print(data)
-#     if data<=100:
-#         amount=0
-#     elif 100<data<=200:
-#         amount=(data)*2
-#     elif 200<data<=500:
-#         amount=(data)*5
-#     elif 500<data<=1000:
-#         amount=(data)*10
-#     elif data<=1000:
-#         amount=(data)*14
-#     month=(i+1)
-#     view={"month":month,
-#          "data":data,
-#          "amount":amount,}
-#     a.append(view)
+    if data<=100:
+        amount=0
+    elif 100<data<=200:
+        amount=(data)*2
+    elif 200<data<=500:
+        amount=(data)*5
+    elif 500<data<=1000:
+        amount=(data)*10
+    elif data<=1000:
+        amount=(data)*14
+    month=(i+1)
+    view={"month":month,
+         "data":data,
+         "amount":amount,}
+    a.append(view)
 
-# print(a)   
+print(a)   
 # a_str=str(a)
 # print(a)        
 

@@ -40,5 +40,5 @@
 # print(no3)
 
 sen=("today is friday")
-print("o" in sen)
-print("h"in sen)
+print("o" in sen)  # o in sentence so value is true
+print("h"in sen)   # h in not sentence so value is false 

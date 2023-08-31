@@ -76,6 +76,6 @@
 # list=len(l)
 # print(list)
 
-l=[1,2,3,4,5] #list ele add the user number 
-l[4]="6"   #
-print(l)
+# l=[1,2,3,4,5] #list ele add the user number 
+# l[4]="6"   #
+# print(l)
