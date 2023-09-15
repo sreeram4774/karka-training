@@ -130,7 +130,7 @@
                 console.log("username",username,"/npassword",password);
                 var actusername="sreeram47";
                 var actpassword="1234";
-                if (username==actusername & password==actpassword)
+                if (username==actusername && password==actpassword)
                 {     
 
                     alert("succesfully logged in")
@@ -139,8 +139,17 @@
                     alert("your username & password is wrong")
                 }
                 Obj["username"]=username
-                obj["password"]
+                obj["password"]=password
+                console.log(obj)
             }
+            var obj1={"username":"sreeram47@gmail.com","password":"sree1234","name":"sreeram.G"}
+            var username="sreeram47@gmail.com";
+            if(username==obj1.username){
+                console.log(obj1.name)}
+           else{
+            consel.log(No)
+           }     
+            
         
         </script>     
 </body>
