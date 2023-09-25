@@ -40,7 +40,7 @@ input{
 
 
 }
-.btn3{
+button{
     height: 48px;
     width: 48px;
     border: none;
@@ -55,12 +55,8 @@ input{
     background-color: #3e8e41;
     color: white;
   } */
-/* .hover_btn:hover{
+.hover_btn:hover{
   transform: scale(1.25);
-} */
-.btn3:hover{
-    transform: scale(1.25);
-
 }
 
 .equal{

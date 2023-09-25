@@ -104,3 +104,16 @@ body .img{
 .form-outline{
     margin-bottom: 10px;
 }
+.rounded-2 {
+    border-radius: 1.5rem!important;
+    border: 2px solid black;
+}
+/* @media (min-width: 1200px) */
+.col-xl-5 {
+    flex: 0 0 auto;
+    width: 41%;
+}
+.row {
+    --bs-gutter-x: 0rem!important;
+    --bs-gutter-y: 0;
+}

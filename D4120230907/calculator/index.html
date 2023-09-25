@@ -18,26 +18,26 @@
             <div class="div1">    
                  <h5>FX:47AS</h5>
             </div> 
-            <input type="text" placeholder="0" id="output">
-            <button class="hover_btn" onclick="clear()">Cl</button>
-            <button class="hover_btn" onclick="del()">DEL</button>
-            <button class="hover_btn" onclick="display('%')">%</button>
-            <button class="hover_btn" onclick="display('/')">/</button>
-            <button class="hover_btn" onclick="display('7')">7</button>
-            <button class="hover_btn" onclick="display('8')">8</button>
-            <button class="hover_btn" onclick="display('9')">9</button>
-            <button class="hover_btn" onclick="display('*')">*</button>
-            <button class="hover_btn" onclick="display('4')">4</button>
-            <button class="hover_btn" onclick="display('5')">5</button>
-            <button class="hover_btn" onclick="display('6')">6</button>
-            <button class="hover_btn" onclick="display('-')">-</button>
-            <button class="hover_btn" onclick="display('1')">1</button>
-            <button class="hover_btn" onclick="display('2')">2</button>
-            <button class="hover_btn" onclick="display('3')">3</button>
-            <button class="hover_btn" onclick="display('+')">+</button>
-            <button class="hover_btn" onclick="display('.')">.</button>
-            <button class="hover_btn" onclick="display('0')">0</button>
-            <button class="hover_btn" onclick="equal()">=</button>
+            <input type="text" placeholder="0" id="outputscreen">
+            <button class="btn3"class="hover_btn" onclick="cl()">Cl</button>
+            <button class="btn3"class="hover_btn" onclick="del()">DEL</button>
+            <button class="btn3"class="hover_btn" onclick="display('%')">%</button>
+            <button class="btn3"class="hover_btn" onclick="display('/')">/</button>
+            <button class="btn3"class="hover_btn" onclick="display('7')">7</button>
+            <button class="btn3"class="hover_btn" onclick="display('8')">8</button>
+            <button class="btn3"class="hover_btn" onclick="display('9')">9</button>
+            <button class="btn3"class="hover_btn" onclick="display('*')">*</button>
+            <button class="btn3"class="hover_btn" onclick="display('4')">4</button>
+            <button class="btn3"class="hover_btn" onclick="display('5')">5</button>
+            <button class="btn3"class="hover_btn" onclick="display('6')">6</button>
+            <button class="btn3"class="hover_btn" onclick="display('-')">-</button>
+            <button class="btn3"class="hover_btn" onclick="display('1')">1</button>
+            <button class="btn3"class="hover_btn" onclick="display('2')">2</button>
+            <button class="btn3"class="hover_btn" onclick="display('3')">3</button>
+            <button class="btn3"class="hover_btn" onclick="display('+')">+</button>
+            <button class="btn3"class="hover_btn" onclick="display('.')">.</button>
+            <button class="btn3"class="hover_btn" onclick="display('0')">0</button>
+            <button class="btn3"class="hover_btn" onclick="calculate()"class="equal">=</button>
     
             
         </div>
@@ -45,11 +45,26 @@
     </div>
 </div>   
 </body>
-  <script>
-   function display(){
-    var output=document.getElementById("display").Value
+<script>
+    let outputscreen=document.getElementById("outputscreen");
+    function display(num){
+        outputscreen.value += num;
+    }
+    function cl(){
+        outputscreen.value= '';
+    }
+    function calculate(){
+        try{
+            outputscreen.value=eval(outputscreen.value);
+        }
+        catch(error){
+            alert("invalid")
+        }
+    }
     
-
-   }
-  </script>
+        function del(){
+            outputscreen.value=outputscreen.value.slice(0,-1)
+        }
+ 
+</script>
 </html>
