@@ -8,4 +8,6 @@ function biggest(a,b){
 }
 a=biggest(9,5)
 b=biggest(9,32)
+alert(`${a,b}`)
+// alert(b)
 console.log(a,b)
