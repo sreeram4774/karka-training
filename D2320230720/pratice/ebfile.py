@@ -1,1 +1,0 @@
-d_str=to_str(d)
