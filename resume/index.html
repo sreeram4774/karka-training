@@ -23,7 +23,7 @@
         <div class="col-md-2">
           <!-- <div class="form-outline"> -->
               <label class="form-label" for="form3Examplev2">First name :</label>
-            <input type="text" id="form3Examplev2" class="form-control " placeholder="First Name">
+            <input type="text" id="form3Examplev2" class="form-control first" placeholder="First Name">
           </div>
           <div class="col-md-2">
 
@@ -296,12 +296,21 @@
           </div>
         </div>
         <div class="col-12 d-flex justify-content-center ">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary" onclick="getvalue()">Sign in</button>
         </div>
         </div>  
       </form>
   </div>
     <script>
+      function getvalue(){
+        var name=document.getElementsByClassName("first").value;
+        var firstname="sreeram"
+        if (name==firstname){
+          alert.log("hi")
+        }
+
+      }
+      
       
     </script>
 </body>

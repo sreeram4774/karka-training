@@ -1,12 +1,12 @@
-# # weekday1=sunday
-# # weekday2=monday
-# # weekday3=Tuesday
-# # weekday4=wednesday
-# # weekday5=thursday
-# # weekday6=friday
-# # weekday7=saturday
-# # weekday0=saturday
-# def checkday():
+weekday1=sunday
+weekday2=monday
+weekday3=Tuesday
+weekday4=wednesday
+weekday5=thursday
+weekday6=friday
+weekday7=saturday
+weekday0=saturday
+def checkday():
     day=int(input("enter your day "))
     if day==1:
         print("Today is a sunday!")
