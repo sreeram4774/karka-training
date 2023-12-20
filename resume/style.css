@@ -16,7 +16,7 @@ h1{
 }
 img{
     border: 3px solid black;
-    margin-left: 1030px;
+    margin-left: 1095px;
     height: 200px;
     width: 170px;
     margin-bottom: 10px;
@@ -72,13 +72,13 @@ h6{
  display: flex;
  justify-content: end;
  align-items: center;
- margin-right: 60px;
+ margin-right: 65px;
 }
-.form-control:hover{
+/* .form-control:hover{
     transform: scale(1.2);
     border: 2px solid black;
 
-}
+} */
 .col{
     border: 2px solid black;
 }

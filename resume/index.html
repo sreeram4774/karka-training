@@ -16,29 +16,28 @@
         
       
         <!-- <img  src="../../../Downloads/person_black_24dp.svg"><h6>Paste Your Photo</h6> -->
-        <p><img src="../../../Downloads/person_black_24dp.svg " alt=""><h6>Paste Your Photo</h6></p>
+        <p><img src="../../Downloads/person_black_24dp.svg" alt=""><h6>Paste Your Photo</h6></p>
 
     
     <form class="row g-4">
         <div class="col-md-2">
           <!-- <div class="form-outline"> -->
               <label class="form-label" for="form3Examplev2">First name :</label>
-            <input type="text" id="form3Examplev2" class="form-control first" placeholder="First Name">
+            <input type="text" id="first" class="form-control" placeholder="First Name" name="First Name">
           </div>
           <div class="col-md-2">
 
           <!-- <div class="form-outline"> -->
             <label class="form-label" for="form3Examplev3">Last name :</label>
-            <input type="text" id="form3Examplev3" class="form-control " placeholder="Last Name">
+            <input type="text" id="form3Examplev3" class="form-control " placeholder="Last Name" name="Last Name">
           </div>
           <div class="col-2">
             <label for="inputAddress" class="form-label">Date Of Birth :</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="(DD\MM\YYYY)">
+            <input type="text" class="form-control" id="inputAddress" placeholder="(DD\MM\YYYY)"name="DOB">
           </div>
            <div class="col-2">
             <label for="inputAddress" class="form-label">Gender :</label>
-            <select id="inputstatus" class="form-select">
-            <option selected>Choose...</option>
+            <select id="inputstatus" class="form-select"name="Gender">
             <option>Male</option>
             <option>Female</option>
             <option>Others</option>
@@ -47,12 +46,12 @@
      
          <div class="col-md-4">
           <label for="inputEmail4" class="form-label">Email ID : </label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Example@gmail.com">
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Example@gmail.com"name="Email ID">
         </div> 
       
            <div class="col-2">
             <label for="inputAddress" class="form-label">Material Status :</label>
-            <select id="inputstatus" class="form-select">
+            <select id="inputstatus" class="form-select" name="Material Status">
             <option selected>Choose...</option>
             <option>Single</option>
             <option>Married</option>
@@ -61,7 +60,7 @@
 
            <div class="col-2">
             <label for="inputAddress" class="form-label">Language :</label>
-            <select id="inputstatus" class="form-select">
+            <select id="inputstatus" class="form-select"name="Language">
             <option selected>Choose...</option>
             <option>Tamil</option>
             <option>English</option>
@@ -296,21 +295,23 @@
           </div>
         </div>
         <div class="col-12 d-flex justify-content-center ">
-          <button type="submit" class="btn btn-primary" onclick="getvalue()">Sign in</button>
+          <button type="button" class="btn btn-primary" onclick="getvalue()">Sign in</button>
         </div>
         </div>  
       </form>
   </div>
     <script>
       function getvalue(){
-        var name=document.getElementsByClassName("first").value;
-        var firstname="sreeram"
-        if (name==firstname){
-          alert.log("hi")
+        const name=document.querySelectorAll("input");
+        // localStorage.setItem("name",JSON.stringify(name))
+        console.log(name)
         }
 
-      }
       
+    
+
+
+
       
     </script>
 </body>

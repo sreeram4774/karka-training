@@ -6,21 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="submit()">Click Here</button>
+    <button onclick="submit()">Add</button>
+    <div id="result">
+
+    </div>
 
     
 </body>
 <script>
-      var a=100
-      var sum=0
+    var content=document.getElementById("result")
     function submit(){
-    for(let i=1;i<=100;i++){
-        sum=sum+i   
-
+        var tag=document.createElement("h1")
+        tag.textContent="Hello"
+        content.append(tag)
     }
-    console.log(sum)
-    }
-
-   
 </script>
 </html>

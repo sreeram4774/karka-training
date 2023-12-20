@@ -82,15 +82,15 @@ body .img{
 .account{
     margin-bottom: 5px;
 }
-.form-control:hover{
+/* .form-control:hover{
     transform: scale(1.18);
-}
-.btn:hover{
+} */
+/* .btn:hover{
     transform: scale(1.18);
 }
 .text:hover{
     transform: scale(1.18);
-}
+} */
 .rounded-2{
     margin-left: 7px;
     margin-right: 6px;
