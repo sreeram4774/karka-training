@@ -18,21 +18,21 @@
         for(let i=0;i<a.length;i++){
             if(a[i]!=b){
                 c.push(a[i])
-                d.push(a[i])
+                // d.push(a[i])
             }
-            else if(a[i]==b){
-                d.push("*")
-            }
+            // else if(a[i]==b){
+            //     d.push("*")
+            // }
         }
         console.log(c)
-        console.log(d)
+        // console.log(d)
 
 
-        // const d=a.length-c.length
-        // for(let i=0;i<d;i++){
-        //     c.push("*")
-        // }
-        // console.log(c)
+        const d=a.length-c.length
+        for(let i=0;i<d;i++){
+            c.push("*")
+        }
+        console.log(c)
     }
   
 
