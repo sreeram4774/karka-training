@@ -1,9 +1,9 @@
 function initializeSwiper(){
-  var swiper = new Swiper(".mySwiper1",{
+  var swiper1 = new Swiper(".mySwiper1",{
       // slidesPerView: 3, 
       slidesPerView: 'auto', 
       spaceBetween: 10,
-      slidesPerGroup: 1,
+      slidesPerGroups: 1,
       loop: true,
       loopFillGroupWithBlank: true,
       pagination: {
@@ -32,9 +32,47 @@ function initializeSwiper(){
           },
       }
   });
+
 }
 
 
+    // var swiper2= new Swiper(".mySwiper2",{
+    //     // slidesPerView: 3, 
+    //     slidesPerView: 'auto', 
+    //     spaceBetween: 10,
+    //     slidesPerGroup: 1,
+    //     loop: true,
+    //     loopFillGroupWithBlank: true,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //     },
+    //     navigation: {
+    //         nextEl: ".swiper-button-next",
+    //         prevEl: ".swiper-button-prev",
+    //     },
+    //     autoplay: {
+    //         delay: 1500, 
+    //         disableOnInteraction: false,
+    //     },
+    //     effect: 'slide',
+    //     speed: 1500,
+    //     breakpoints: {
+    //         1024: {
+    //             slidesPerView: 4,
+    //         },
+    //         426:{
+    //             slidesPerView: 3,
+    //         },
+    //         425:{
+    //             slidesPerView: 2,
+    //         },
+    //     }
+    // });
+  
+  
+
+  
 window.onload=function(){
 initializeSwiper();
 }
