@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="Country" id="country" onchange="submit()">
+        <option id="India" value="India">India</option>
+        <option id="America" value="America">America</option>
+        <option id="Singapore" value="Singapore">Singapore</option>
+        <option id="England" value="England">England</option>
+    </select>
+    <button onclick="submit()">Click</button>
+    
+</body>
+<script>
+    let country_date={
+        india:{
+        Country:"india",
+        Population:"140.76 crores",
+        Capital:"Delhi",
+        Currency:"INR",
+    },
+       America:{
+        Country:"America",
+        Population:"33.19 crores",
+        Capital:"washington",
+        Currency:"U.S Dollar",
+    },
+       Singapore:{
+        Country:"Singapore",
+        Population:"54.5 lakhs ",
+        Capital:"singapore city",
+        Currency:"Singapore Dollar",
+    },
+        England:{
+        Country:"England",
+        Population:"5.6 lakhs ",
+        Capital:"singapore city",
+        Currency:"Pound Sterling",
+    }
+     
+    }
+
+    function submit(){
+        let countries=document.getElementById("country").value;
+        let country=country_date[countries];
+        
+
+    }
+
+
+</script>
+</html>

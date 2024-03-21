@@ -1,0 +1,357 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 200; */
+    font-style: medium;
+}
+
+ 
+#date{
+    color: black;
+}
+#month{
+    color:black;
+}
+@keyframes moveArrow {
+    0% { transform: translateX(0); }
+    50% { transform: translatex(-25px); }
+    100% { transform: translateX(0); }
+}
+.arrow .circle {
+    animation: moveArrow 2s infinite;
+}
+
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 17px solid transparent;
+	border-left: 35px solid #8F46DE;;
+	border-bottom: 20px solid transparent;
+}
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    
+  }
+
+  
+
+  .slider-wrapper {
+    display: flex;
+    transform: translateX(-100%);
+  }
+
+  .slider-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text-container {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .slider-item img {
+    max-width: 100%;
+    height: auto;
+  }
+.card{
+    border: none;
+}
+
+/* .karka-img img{
+    width: 70%;
+    height: 70%;
+} */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+  }
+  .swiper-slides {
+    text-align: center;
+    font-size: 18px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+  }
+
+
+  .swiper-slide img {
+    width: 90%;
+    height: 50%;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 10px;
+    
+  }
+
+
+
+  .swiper-button-prev {
+    margin-top: 50px;
+    color:rgba(128, 128, 128, 0.74)!important;
+  }
+
+  .swiper-button-next {
+    color:rgba(128, 128, 128, 0.74)!important;
+    margin-top: 50px;
+  }
+.blue{
+    background-color:#EBEFF5;
+}
+
+.img_div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.googles{
+    margin-left: auto;
+}
+.boot_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+::placeholder{
+    color:#C8C7C7;
+}
+@media only screen and (max-width:1023px){
+    .top{
+        text-align: center;
+    }
+    .top-1{
+        text-align: end!important;
+    }
+    .content h2{
+        font-size: 30px!important;
+    }
+    .contact1-web{
+        font-size: 14px!important;
+    }
+  
+}
+@media only screen and (min-width:768px){
+    .break{
+        display: none;
+    }
+  
+}
+@media only screen and (max-width:767px){
+    .empty{
+        display: none!important;
+    }
+    .contact{
+        display: flex;
+        justify-content: end;
+    }
+    .contact button{
+        font-size: 15px!important;
+        padding: 5px!important;
+    }
+    .karka-img img{
+        margin-left: 0%!important;
+        width: 75px;
+    }
+    .top{
+        text-align: center!important;
+        
+    }
+    .top span{
+        font-size: 13px!important;
+        font-weight: 400;
+    }
+    .heading{
+        margin: 0%!important;
+
+    }
+    
+}
+@media only screen and (min-width:426px){
+    /* .design-box{
+        display: none;
+    } */
+    .googles{
+        display: none!important;
+    }
+    .contact-button{
+        display: none;
+    }
+    .design-content{
+        display: none;
+    }
+    .highlights{
+        display: none;
+    }
+    .interested{
+        display: none;
+    }
+    .paysmall{
+        display: none;
+    }
+    .large-carousel{
+        display: none;
+    }
+    .contactlast{
+        display: none;
+    }
+    .say{
+        display: none;
+    }
+   
+
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    .card-title {
+        font-size: medium;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+    .card-title {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .group-img{
+        display: none!important;
+    }
+    .date p{
+        font-size: 12px!important;
+    }
+    .content h2{
+        font-size: 24px!important;
+    }
+    .ten h4{
+        font-size:14.5px;
+        font-weight: 900;
+    }
+    .content-box{
+        display: none;
+    }
+    .highlight{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .img_divs img{
+        display: none;
+    } 
+    .second-btn{
+        display: none;
+    } 
+    .pay{
+        margin-top: 0%!important;
+    }
+    .contact-button{
+        width: 90%;
+    }
+    .line{
+        margin-top: 0%!important;
+    }
+    .top4{
+        margin:0!important;
+    }
+    .apply button{
+        width: 100%;
+    }
+    .logo-space{
+        display: none;
+    }
+    .logo-row{
+        gap: 8px;
+    }
+    .letter h5{
+        font-size: large;
+    }
+    .carousel{
+        width: 100%!important;
+    }
+    .large-form{
+        display: none;
+    }
+   
+    .container1{
+        padding: 0;
+        margin: 0;
+    }
+    .karka-img img{
+        width: 120%;
+    }
+    .carouseal_container{
+        background-color:#EBEFF5;
+    }
+    .small-carousel{
+        display: none;
+    }
+    .image-change{
+        margin-bottom: 0!important;
+    }
+    .lastcontact{
+        display: none;
+    }
+    .top h6{
+        font-size:small;
+    }
+    .google{
+        padding:4;
+        text-align: center;
+
+    }
+    .karka-img{
+        width: 120%;
+        align-items: center;
+    }
+    .small-form{
+        width: auto!important;
+    }
+    .say1{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:376px) and (max-width:425px){
+    .karka-img{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width:375px){
+    .karka-img{
+        width: 110%;
+    }
+
+}
+
+@media only screen and (max-width:320px){
+    .contact-button{
+        margin-left: -10px;
+        width: 100%;
+
+    }
+
+}

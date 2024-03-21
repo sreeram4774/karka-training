@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text1">
+    <button onclick="handle()">Click</button>
+    <ol id="output"></ol>
+    
+</body>
+<script>
+    function handle(){
+    let user=document.getElementById("text1").value;
+    let list=document.createElement("li");
+    list.innerHTML=user;
+    let output=document.getElementById("output");
+    output.appendChild(list);
+    document.getElementById("text1").value="";
+    }
+   
+</script>
+</html>
