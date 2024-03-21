@@ -1,48 +1,63 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .box{
-                border: 10px solid brown;
-            }
-            .box1{
-                padding:10px 10px ;border:5px solid green ;
-            }
-            .box2{
-                padding:10px 10px;border: 5px solid red;
-            }
-            .box3{
-                border: 10px solid darkturquoise;display: inline-block;
-            }
-        
-            .box4{
-                padding:5px;border: 10px darkblue;
-            }
-            
-            .box5{
-                width:10px;border:5px solid darkturquoise;
-                
-            }
-            .box6{
-                padding: 33px 622px;border:5px solid black;
-            }
-            .box7{
-                padding: 30px 570px;border: 5px solid yellowgreen;
-            }
-            
-            
-          
-        </style>
+<head>
+    <style>
+        .box {
+            border: 10px solid brown;
+            padding: 10px; /* Add padding to the container to create space around the boxes */
+            display: flex; /* Use flexbox to easily control spacing */
+            flex-direction: column; /* Arrange boxes vertically */
+        }
 
-    </head>
-    <body>
-        <div class="box">
-            <div class="box1";align="center"><h1>header</h1></div>
-            <div class="box2";align="center"><h1>nav</h1></div>
-            <div class="box3";align="center"><h1>main</h1></div>
-            <div class="box4";align="center"><h1>aside</h1>
-            <div class="box5";align="center"><h1>section</h1></div>  
-            <div class="box6";align="center"><h1>aside</h1></div>
-            <div class="box7";align="center"><h1>footer</h1></div>
-        </div>
-    </body>
+        .box > div {
+            margin-bottom: 20px; /* Add margin between each box */
+        }
+
+        .box1 {
+            padding: 10px;
+            border: 5px solid green;
+            text-align: center;
+        }
+
+        .box2 {
+            padding: 10px;
+            border: 5px solid red;
+            text-align: center;
+        }
+
+        .box3 {
+            border: 5px solid darkturquoise;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .box4 {
+            padding: 5px;
+            border: 10px solid darkblue;
+            text-align: center;
+        }
+
+        .box6 {
+            padding: 10px;
+            border: 5px solid black;
+            text-align: center;
+        }
+
+        .box7 {
+            padding: 10px;
+            border: 5px solid yellowgreen;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1"><h1>header</h1></div>
+    <div class="box2"><h1>nav</h1></div>
+    <div class="box3"><h1>main</h1></div>
+    <div class="box4"><h1>aside</h1></div>
+    <div class="box6"><h1>aside</h1></div>
+    <div class="box7"><h1>footer</h1></div>
+</div>
+</body>
 </html>
