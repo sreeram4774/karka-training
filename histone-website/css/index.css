@@ -280,7 +280,7 @@ aside img{
     border-radius: 50%;
      opacity: 0; 
     /* display: none !important ; */
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
    
   
   }

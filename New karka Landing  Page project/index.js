@@ -24,7 +24,7 @@ function initializeSwiper(){
           1024: {
               slidesPerView: 4,
           },
-          426:{
+          480:{
               slidesPerView: 3,
           },
           425:{
@@ -106,23 +106,23 @@ setInterval(nextSlide,4000);
 document.querySelector('.next-btn').addEventListener('click', nextSlide);
 document.querySelector('.prev-btn').addEventListener('click', prevSlide);
 
-$(document).ready(function(){
-    var today = new Date();
+// $(document).ready(function(){
+//     var today = new Date();
 
-    var dayOfWeek = today.getDay();
-    var daysToAdd = 1;
-    if (dayOfWeek >= 0 && dayOfWeek <= 3) {
-        daysToAdd = 8 - dayOfWeek; 
-    } else if (dayOfWeek >= 4 && dayOfWeek <= 6) {
-        daysToAdd = 8 - (dayOfWeek - 7); 
-    }
+//     var dayOfWeek = today.getDay();
+//     var daysToAdd = 1;
+//     if (dayOfWeek >= 0 && dayOfWeek <= 3) {
+//         daysToAdd = 8 - dayOfWeek; 
+//     } else if (dayOfWeek >= 4 && dayOfWeek <= 6) {
+//         daysToAdd = 8 - (dayOfWeek - 7); 
+//     }
 
-    var nextMondayDate = new Date(today);
-    nextMondayDate.setDate(today.getDate() + daysToAdd);
+//     var nextMondayDate = new Date(today);
+//     nextMondayDate.setDate(today.getDate() + daysToAdd);
 
-    var date = nextMondayDate.toLocaleDateString('en-US', { day: '2-digit' });
-    var month = nextMondayDate.toLocaleDateString('en-US', { month: 'long' });
+//     var date = nextMondayDate.toLocaleDateString('en-US', { day: '2-digit' });
+//     var month = nextMondayDate.toLocaleDateString('en-US', { month: 'long' });
 
-    $('#date').text(date);
-    $('#month').text(month);
-});
+//     $('#date').text(date);
+//     $('#month').text(month);
+// });
