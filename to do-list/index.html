@@ -33,13 +33,15 @@
     var b=document.getElementById("text")
     function submit(){
         var list=document.createElement("li")
-        list.innerHTML=b.value+"<button style='margin-left:10px; margin-top:10px width: 6%; background-color: black; border-radius: 5px;color:white;' onclick='item(event)'>Delete</button>"
+        list.innerHTML=b.value+"<button style='margin-left:10px; margin-top:10px width: 6%; background-color: black; border-radius: 5px;color:white;' onclick='item(event)'>Delete</button><button style='margin-left:10px; margin-top:10px width: 6%; background-color: black; border-radius: 5px;color:white;' onclick='item(event)'>Edit</button>"
         a.append(list)
         b.value=""
+        
 
     }
     function  item(event){
         event.target.parentElement.remove()
+        
     }
 </script>
 </html>

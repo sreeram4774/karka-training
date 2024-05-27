@@ -1,4 +1,4 @@
-function initializeSwiper(){
+                 function initializeSwiper(){
   var swiper1 = new Swiper(".mySwiper1",{
       // slidesPerView: 3, 
       slidesPerView: 'auto', 

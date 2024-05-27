@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .heading{
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
     <input type="text" id="text1">
     <button onclick="handle()">Click</button>
-    <ol id="output"></ol>
+    <!-- <ul id="output"></ul> -->
+    <div id="output">
+
+    </div>
     
 </body>
 <script>
     function handle(){
     let user=document.getElementById("text1").value;
-    let list=document.createElement("li");
+    let list=document.createElement("h1");
+    list.classList.add("heading")
     list.innerHTML=user;
     let output=document.getElementById("output");
     output.appendChild(list);

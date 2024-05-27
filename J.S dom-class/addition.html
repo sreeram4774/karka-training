@@ -15,10 +15,12 @@
 </body>
 <script>
     function submit(){
-        var a =document.getElementById("one").value;
-        var b =document.getElementById("two").value;
-        var c =parseInt(a) + parseInt(b);
-        document.getElementById("text3").innerHTML = c;
+        var a =Number(document.getElementById("one").value);
+        var b =Number(document.getElementById("two").value);
+        // var c =parseInt(a) + parseInt(b);
+        var c=document.getElementById("text3");
+        c.innerHTML=a*b
+
 
 
     }

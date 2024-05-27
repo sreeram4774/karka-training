@@ -6,6 +6,33 @@
     font-family: "Poppins", sans-serif;
     font-style: medium;
 }
+div.gallery {
+    /* margin: 5px; */
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 180px; */
+    padding: 10px;
+    
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  
+  }
+  
+  div.desc {
+    padding: 10px;
+    text-align: center;
+  }
 
 .slider-container {
     width: 100%;
