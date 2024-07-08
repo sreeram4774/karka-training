@@ -7,21 +7,20 @@
 </head>
 
 <body>
-    <h1  onclick="submit(event)">One</h1>
-    <h1  onclick="submit(event)">Two</h1>
-    <h1  onclick="submit(event)">Three</h1>
-    <h1  onclick="submit(event)">Four</h1>
-    <h1  onclick="submit(event)">Five</h1>
-    <h1  onclick="submit(event)">Six</h1>
-    <h1  onclick="submit(event)">Seven</h1>
-    <h1  onclick="submit(event)">Eight</h1>
-    <h1  onclick="submit(event)">Nine</h1>
-    <h1  onclick="submit(event)">Ten</h1>  
+    <h1>One<button onclick="submit(event)">remove</button></h1>
+    <h1>Two<button onclick="submit(event)">remove</button></h1>
+    <h1>Three<button onclick="submit(event)">remove</button></h1>
+    <h1>Four<button onclick="submit(event)">remove</button></h1>
+    <h1>Five<button onclick="submit(event)">remove</button></h1>
+    <h1>Six<button onclick="submit(event)">remove</button></h1>
+    <h1>Seven<button onclick="submit(event)">remove</button></h1>
+    <h1>Eight<button onclick="submit(event)">remove</button></h1>
+    <h1>Nine<button onclick="submit(event)">remove</button></h1>
+    <h1>Ten<button onclick="submit(event)">remove</button></h1>  
 </body>
 <script>
     function submit(event){
-        event.target.remove()
+        event.target.parentElement.remove()
     }
-
 </script>
 </html>
